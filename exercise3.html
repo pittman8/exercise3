@@ -12,21 +12,31 @@
         {
             width: 700px;
             font-family: "Arial Black";
-            font-weight: bold;
         }
         
-        #header {
+        #header { 
             font-size: 20px;
+            font-weight: bold;
             background-color: darkseagreen;
             padding: 20px;
             padding-left: 2em;
         }
         
-        #map {
+        .map {
+            position: relative;
+            top: 0;
+            left: 0;
             float: left;
             width: 500px;
             height: 500px;
-            background-image: url("map.jpg");
+        }
+        
+        .sprite {
+            position: absolute;
+            display: block;
+            top: 160px;
+            left: 180px;
+            width: 64px;
         }
         
         #column {
@@ -37,7 +47,14 @@
             background-color: #ffcccc;
         }
         
+        .button {
+            border-radius: 25px;
+            background-color: whitesmoke;
+            font-family: verdana;
+        }
+        
         #footer {
+            font-weight: bold;
             font-size: 15px;
             text-align: center;
             background-color: darkkhaki;
@@ -45,9 +62,19 @@
         }
         
     </style>
+    
     <div class="titles" id="header">Grand Hawaiian Tour</div>
-    <div id="map"></div>
-    <div class="titles" id="column"><br /> Column 'o buttons</div>
+    <div style="position: relative; left: 0; top: 0;">
+        <img src="map.jpg" class="map"/>
+        <img src="sprite.png" class="sprite"/>
+    </div>
+    <div class="titles" id="column">
+        <p>Column 'o buttons</p>
+        <p style="font-size: 75%;">This is an awesome game!</p>
+        <button class="button">Click to play</button>
+        <br />
+        <button class="button">Toss in the towel</button>  
+    </div>
     <div class= "titles" id="footer">Copyright © BC Game Demons</div>
 
 
