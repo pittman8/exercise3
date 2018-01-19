@@ -5,25 +5,50 @@
     <title>A fun game</title>
 </head>
 
-<body>
-    
-<h1>Grand Hawaiian Tour</h1>
-    
+<body>    
     <style>
-        h1 {
+        
+        .titles 
+        {
+            width: 700px;
             font-family: "Arial Black";
             font-weight: bold;
-            font-size: 20px;
-            margin-left: 40px;
         }
-    
+        
+        #header {
+            font-size: 20px;
+            background-color: darkseagreen;
+            padding: 20px;
+            padding-left: 2em;
+        }
+        
+        #map {
+            float: left;
+            width: 500px;
+            height: 500px;
+            background-image: url("map.jpg");
+        }
+        
+        #column {
+            float: left;
+            text-align: center;
+            width: 200px;
+            height: 500px;
+            background-color: #ffcccc;
+        }
+        
+        #footer {
+            font-size: 15px;
+            text-align: center;
+            background-color: darkkhaki;
+            padding-bottom: 20px;
+        }
+        
     </style>
-    <div id="h1"></div>
-
-    
-    
-<img src="map.jpg">
-<img src="sprite.png">
+    <div class="titles" id="header">Grand Hawaiian Tour</div>
+    <div id="map"></div>
+    <div class="titles" id="column"><br /> Column 'o buttons</div>
+    <div class= "titles" id="footer">Copyright © BC Game Demons</div>
 
 
 </body>
